@@ -96,14 +96,3 @@
         opacity: 1;
     }
 }
-
-
-@keyframes path {
-    from {
-        left: 8px;
-    }
-
-    to {
-        left: 4px;
-    }
-}
