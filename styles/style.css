@@ -50,7 +50,7 @@
 .content {
   margin: 0 auto;
   max-inline-size: 696px;
-  margin-block-start: 100px;
+  margin-block-start: 98px;
 }
 
 .header__title {
@@ -74,7 +74,7 @@
 
 .card__title {
   font-family: var(--main-font), sans-serif;
-  border: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
   font-weight: var(--header-weight);
   font-variation-settings: "wght" var(--header-weight);
   font-size: 18px;
@@ -154,7 +154,7 @@
 }
 
 .card__content {
-  border: 2px solid var(--border-color);
+  border-top: 2px solid var(--border-color);
   padding: 25px;
 }
 
@@ -235,7 +235,7 @@
 .button-remember:focus-visible,
 .button-save:focus-visible {
   outline: none;
-  box-shadow: 2px 2px 0 0px var(--border-color);
+  box-shadow: 2px 0px 2px 0px var(--border-color);
 }
 
 /* Новая анимация фона кнопок - вытягивание из угла */
