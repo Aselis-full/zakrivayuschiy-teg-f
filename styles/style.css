@@ -19,7 +19,7 @@
 
 .header {
   font-family: var(--accent-font), fantasy;
-  font-weight: var(--text-weight), fantasy;
+  font-weight: var(--text-weight);
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@
   border: 2px solid var(--color);
   width: 100%;
   background-color: white;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
   font-family: var(--main-font) , sans-serif;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .article_title {
-  padding: 5px 10px;
+  padding: 3px 8px;
   font-variation-settings: "wght" var(--title-weight);
   color: var(--color);
   background-color: var(--background-color);
@@ -78,7 +78,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-weight: var(--text-weight);
   font-size: var(--font-size-card-label);
   text-shadow: 0 0 1px var(--shadow-color);
@@ -88,14 +88,14 @@
 }
 
 .article_info {
-  padding: 16px 20px 23px 24px;
+  padding: 20px 22px 23px 24px;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
 }
 
 .article_text:not(:last-of-type) {
-  margin-block-end: 27px;
+  margin-block-end: 25px;
 }
 
 .article_text:last-of-type {
@@ -235,7 +235,7 @@
 .floppy_dialog[open] {
   flex-shrink: 0;
   border: var(--main-border);
-  padding: 30px;
+  padding: 30px 38px;
   inline-size: 354px;
 }
 
@@ -299,19 +299,24 @@ body:has(.floppy_dialog[open]) {
     width: 100%;
   }
 
+  .article_text:not(:last-of-type) {
+    margin-block-end: 26px;
+
+  }
   .header {
     margin-top: 27vw;
     margin-bottom: 28vw;
     block-size: 325px;
   }
 
+  .article_info {
+    padding: 20px 26px 26px 25px;
+    line-height: 21px;
+  }
+
   .header_title {
     line-height: 49px;
     letter-spacing: normal;
-  }
-
-  .article_info {
-    padding: 20px 27px 25px 27px;
   }
 
   .card_label {
@@ -323,7 +328,7 @@ body:has(.floppy_dialog[open]) {
     flex-direction: column;
     width: 312px;
     height: 84px;
-    margin: 0;
+    margin: -1px;
     gap: 4px;
   }
 
