@@ -18,8 +18,8 @@
 }
 
 .header {
-  font-family: var(--accent-font);
-  font-weight: var(--text-weight);
+  font-family: var(--accent-font), fantasy;
+  font-weight: var(--text-weight), fantasy;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -46,12 +46,6 @@
   display: grid;
   margin-block-end: 100px;
   justify-items: center;
-}
-
-.card_item {
-  display: grid;
-  border: var(--main-border);
-  background-color: white;
 }
 
 .article {
@@ -94,7 +88,7 @@
 }
 
 .article_info {
-  padding: 24px 24px 25px 26px;
+  padding: 16px 20px 23px 24px;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
@@ -108,7 +102,7 @@
   margin-block-end: 25px;
 }
 
-.image_brightness{
+.image-brightness{
   filter: brightness(110%);
 }
 .image-grayscale {
@@ -189,7 +183,7 @@
   border: 2px solid var(--color);
   color: white;
   cursor: pointer;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   justify-content: center;
   overflow: hidden;
   position: relative;
@@ -204,6 +198,13 @@
 }
 
 .decorated_button_text {
+  font-size: var(--button-font-size);
+  mix-blend-mode: difference;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.decorated_button_text-dialog {
   font-size: var(--button-font-size);
   mix-blend-mode: difference;
   margin-right: 5px;
@@ -261,7 +262,7 @@ body:has(.floppy_dialog[open]) {
 
 .dialog_label {
   align-self: flex-start;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -274,7 +275,6 @@ body:has(.floppy_dialog[open]) {
 
 .article_image {
   display: block;
-
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
