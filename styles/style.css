@@ -210,6 +210,12 @@
   margin-right: 5px;
 }
 
+.decorated_button_text-like {
+  font-size: var(--button-font-size);
+  mix-blend-mode: difference;
+  margin-right: 5px;
+}
+
 .decorated_button::before {
   content: "";
   position: absolute;
